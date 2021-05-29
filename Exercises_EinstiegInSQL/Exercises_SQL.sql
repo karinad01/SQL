@@ -207,4 +207,30 @@ DELETE FROM qualglobalarchiv;
 #Seite 160 Uebung 1
 TRUNCATE TABLE `hardware`;
 
+ #Seite 181 Uebung 1
+ SELECT CAST('5' AS UNSIGNED INTEGER) + 20 AS summe;
+ 
+ #Seite 181 Uebung 2
+ SELECT 1000000 + '5.8' AS summe;
+ 
+ #Seite 193 Uebung 1
+ CREATE TABLE `fahrzeugtyp`(
+ typid tinyint PRIMARY KEY,
+ hersteller VARCHAR(200),
+ modell VARCHAR(200),
+ leistung DECIMAL(5.2),
+ motor VARCHAR(100),
+ getriebe VARCHAR(100)
+ );
+ 
+ #Seite 194 Uebung 2
+ INSERT INTO fahrzeugtyp
+ VALUES 
+ (1, 'VW', 'Polo', 100.78, 'Benzin', 'Automatik'),
+ (2, 'Toyota', 'Yaris', 75.00, 'Benzin', 'Manuell');
+ 
+ SELECT * from fahrzeugtyp;
+ 
+ #Seite 194 Uebung 3
+ DROP TABLE fahrzeugtyp;
  
