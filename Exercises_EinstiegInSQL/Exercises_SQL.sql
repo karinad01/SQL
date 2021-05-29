@@ -269,4 +269,24 @@ TRUNCATE TABLE `hardware`;
 
 SELECT * FROM mitarbeiterjubilaeum;
 
+
+#Seite 218 Uebung 1
+CREATE TABLE `produktionsmaschinen`(
+maschinenid TINYINT,
+variante TINYINT,
+bezeichnung VARCHAR(200)
+);
+
+ALTER TABLE `produktionsmaschinen`
+ADD CONSTRAINT pk_maschine PRIMARY KEY(maschinenid, variante);
+
+INSERT INTO `produktionsmaschinen`
+VALUES
+(1,1,'Drehmaschine 1.0'),
+(1,2,'Drehmaschine 1.1'),
+(2,1,'Drehmaschine 2.0'),
+(2,2,'Drehmaschine 2.1');
+
+SELECT  * FROM produktionsmaschinen;
+
  
