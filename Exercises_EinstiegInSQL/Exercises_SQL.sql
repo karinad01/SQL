@@ -312,18 +312,25 @@ FROM
     
     #Seite 237 Uebung 3
     
-    SELECT name, vorname 
-    FROM  
-    `niederlassungholland`
-    UNION
-    SELECT name, vorname
-    FROM
-    `niederlassungbelgien`
-    UNION
-    SELECT name, vorname
-    FROM `niederlassungschweiz`;
+    SELECT 
+    name, vorname
+FROM
+    `niederlassungholland` 
+UNION SELECT 
+    name, vorname
+FROM
+    `niederlassungbelgien` 
+UNION SELECT 
+    name, vorname
+FROM
+    `niederlassungschweiz`;
     
- 
+    #Seite 243 Uebung 1
+    
+ SELECT name, vorname FROM niederlassungholland
+WHERE name NOT IN (SELECT name FROM niederlassungbelgien)
+AND
+ vorname NOT IN (SELECT vorname FROM niederlassungbelgien);
     
     
 
