@@ -323,6 +323,8 @@ FROM
     SELECT name, vorname
     FROM `niederlassungschweiz`;
     
+ 
+    
     
 
 
