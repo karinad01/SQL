@@ -234,3 +234,39 @@ TRUNCATE TABLE `hardware`;
  #Seite 194 Uebung 3
  DROP TABLE fahrzeugtyp;
  
+ #Seite 205 Uebung 1
+ CREATE TABLE `mitarbeiterjubilaeum`(
+ geschenkid TINYINT PRIMARY KEY,
+ artikel VARCHAR(200) NOT NULL,
+ preis DECIMAL(5,2) NOT NULL,
+ jahreszugehoerigkeit TINYINT NOT NULL
+ );
+ 
+ INSERT INTO `mitarbeiterjubilaeum` 
+ VALUES
+ (1, 'Uhr', 150.00, 10),
+ (2, 'Tasche', 20.00, 5);
+ 
+ SELECT * FROM mitarbeiterjubilaeum;
+ 
+ DROP TABLE mitarbeiterjubilaeum;
+ #Seite 206 Uebung 4
+ 
+ CREATE TABLE `mitarbeiterjubilaeum`(
+  geschenkid TINYINT PRIMARY KEY,
+ artikel VARCHAR(200) NOT NULL,
+ preis DECIMAL(5,2) NOT NULL,
+ jahreszugehoerigkeit TINYINT NOT NULL CHECK(
+ jahreszugehoerigkeit = 5 OR jahreszugehoerigkeit = 10 
+ OR jahreszugehoerigkeit = 15 OR jahreszugehoerigkeit = 20
+ )
+ );
+ 
+ INSERT INTO mitarbeiterjubilaeum
+ VALUES 
+(1, 'Aktentasche', 150.50,5),
+(2, 'Uhr', 200.50, 10);
+
+SELECT * FROM mitarbeiterjubilaeum;
+
+ 
