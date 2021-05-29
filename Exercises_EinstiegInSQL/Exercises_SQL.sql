@@ -289,4 +289,16 @@ VALUES
 
 SELECT  * FROM produktionsmaschinen;
 
+-- Kapitel 5 Mengenoperationen anwenden
+#Seite 237 Uebung 1
+SELECT 
+    name, vorname
+FROM
+    `niederlassungbelgien` 
+UNION SELECT 
+    name, vorname
+FROM
+    `niederlassungholland`;
+
+
  
