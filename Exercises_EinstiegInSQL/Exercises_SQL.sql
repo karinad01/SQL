@@ -299,6 +299,31 @@ UNION SELECT
     name, vorname
 FROM
     `niederlassungholland`;
+    
+    #Seite 237 Uebung 2
+    SELECT 
+    name, vorname
+FROM
+    `niederlassungbelgien` 
+UNION ALL SELECT 
+    name, vorname
+FROM
+    `niederlassungholland`;
+    
+    #Seite 237 Uebung 3
+    
+    SELECT name, vorname 
+    FROM  
+    `niederlassungholland`
+    UNION
+    SELECT name, vorname
+    FROM
+    `niederlassungbelgien`
+    UNION
+    SELECT name, vorname
+    FROM `niederlassungschweiz`;
+    
+    
 
 
  
