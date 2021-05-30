@@ -331,6 +331,10 @@ FROM
 WHERE name NOT IN (SELECT name FROM niederlassungbelgien)
 AND
  vorname NOT IN (SELECT vorname FROM niederlassungbelgien);
+ 
+ -- Kapitel 6 Benutzer, Rollen und Ihre Berechtigungen
+ 
+ #Seite 	
     
     
 
