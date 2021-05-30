@@ -13,3 +13,5 @@ GRANT personal TO hans;
 USE uebungsdatenbank;
 
 REVOKE SELECT, INSERT, UPDATE ON abteilung FROM personal;
+
+DROP ROLE 'personal';
