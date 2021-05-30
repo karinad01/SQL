@@ -360,7 +360,7 @@ AND
 REVOKE INSERT, UPDATE ON artikel FROM vertrieb;
 
 #Seite 263 Uebung 7
-
+DROP ROLE 'vertrieb';
  
     
     
