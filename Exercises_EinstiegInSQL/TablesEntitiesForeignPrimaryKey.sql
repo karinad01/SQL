@@ -55,3 +55,21 @@ VALUES
 (2, 'Kaufmann'),
 (3, 'Mechanik'),
 (4, 'Pneumatik');
+
+#Seite 333 Uebung 2
+INSERT INTO `fachbuch`
+VALUES
+(1, '1235', 'Mechanik', 3),
+(2, '9878', 'Elektrotechnik', 2),
+(3, '2323', 'Elektronik', 2),
+(4, '2254', 'Pneumatik', 3),
+(5, '4455', 'Mathematik Grundlagen 1', 2),
+(6, '4456', 'Mathematik Grundlagen 2', 2),
+(7, '5566', 'Mengenlehre', NULL),
+(8, '7766', 'Kommunikation 1', NULL),
+(9, '7767', 'Kommunikation 2', NULL);
+
+select * from fachbuch;
+
+#Seite 334 Uebung 3
+
