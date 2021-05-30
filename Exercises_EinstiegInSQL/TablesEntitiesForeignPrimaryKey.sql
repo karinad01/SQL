@@ -40,5 +40,18 @@ ADD CONSTRAINT fk_fachbuchid
 FOREIGN KEY (fk_fachbuchid)
 REFERENCES fachbuch(fachbuchid);
 
+#Seite 333 Uebung 1
+INSERT INTO `verlag`
+VALUES
+(1, 'Rheinwerk Verlag'),
+(2, 'Elektro Verlag'),
+(3, 'Mechanik Verlag'),
+(4, 'Kaufmann Verlag'),
+(5, 'Medien Verlag');
 
-
+INSERT INTO `fachbereich`
+VALUES
+(1, 'Elektrotechnik'),
+(2, 'Kaufmann'),
+(3, 'Mechanik'),
+(4, 'Pneumatik');
