@@ -85,3 +85,15 @@ VALUES
 
 SELECT*FROM fachbereichbuch;
 
+#Seite 367 Uebung 1
+SELECT titel, isbn, fk_verlagid, verlag, verlagid from fachbuch
+INNER JOIN verlag
+ON
+ fk_verlagid = verlagid;
+ 
+ #Seite 367 Uebung 2
+ SELECT titel, isbn, fk_verlagid, verlag, verlagid 
+ FROM fachbuch
+ LEFT OUTER JOIN verlag
+ ON fk_verlagid=verlagid;
+
