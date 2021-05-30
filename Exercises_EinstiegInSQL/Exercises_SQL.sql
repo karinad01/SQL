@@ -334,7 +334,34 @@ AND
  
  -- Kapitel 6 Benutzer, Rollen und Ihre Berechtigungen
  
- #Seite 	
+ #Seite 262 Uebung 1
+ CREATE USER thomas IDENTIFIED BY 'secret';
+ 
+ #Seite 262 Uebung 2
+ GRANT SELECT, INSERT, UPDATE ON artikel TO thomas;
+ 
+ #Seite 262 Uebung 3
+ REVOKE SELECT, INSERT, UPDATE ON artikel FROM thomas;
+ 
+ #Seite 262 Uebung 4
+ DROP USER thomas;
+ 
+ #Seite 262 Uebung 5
+ CREATE ROLE 'vertrieb';
+ GRANT SELECT, INSERT, UPDATE ON artikel TO vertrieb; 
+ 
+ CREATE USER 'frank' IDENTIFIED BY 'secret';
+ CREATE USER 'ralf' IDENTIFIED BY 'secret';
+ 
+ GRANT 'vertrieb' TO 'ralf';
+ GRANT 'vertrieb' TO 'frank';
+ 
+ #Seite 262 Uebung 6
+REVOKE INSERT, UPDATE ON artikel FROM vertrieb;
+
+#Seite 263 Uebung 7
+
+ 
     
     
 
